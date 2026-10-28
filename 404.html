@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found — Muhamad Zikri Alviansyah</title>
+  <meta name="theme-color" content="#faf9f6" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <style>
+    .nf {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      min-height: 75vh;
+      padding: 80px 0;
+    }
+    .nf-inner { position: relative; z-index: 1; }
+    .nf-decor { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+    .nf-decor span { position: absolute; display: block; border-radius: 50%; }
+    .nf-b1 { width: 280px; height: 280px; background: var(--yellow); top: -70px; right: -70px; }
+    .nf-b2 { width: 210px; height: 210px; background: var(--purple); bottom: -50px; left: -50px; }
+    .nf-b3 { width: 140px; height: 140px; background: var(--teal); bottom: 18%; right: 14%; }
+    .nf-404 {
+      font-family: var(--font-head);
+      font-size: clamp(5rem, 18vw, 11rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin: 0;
+      color: var(--ink);
+    }
+    .nf h1 { margin: 18px 0 16px; font-size: clamp(2rem, 5vw, 3rem); }
+    .nf p { max-width: 46ch; color: var(--muted); margin: 0; }
+    .nf .btn-black { margin-top: 28px; }
+    .nf-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
+    .nf-links a { text-decoration: none; }
+    @media (max-width: 767px) {
+      .nf-b1 { width: 170px; height: 170px; top: -40px; right: -40px; }
+      .nf-b2 { width: 130px; height: 130px; bottom: -30px; left: -30px; }
+      .nf-b3 { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="nf">
+    <div class="nf-decor" aria-hidden="true">
+      <span class="nf-b1"></span>
+      <span class="nf-b2"></span>
+      <span class="nf-b3"></span>
+    </div>
+    <div class="container nf-inner">
+      <p class="nf-404" aria-hidden="true">404</p>
+      <h1>Page not found</h1>
+      <p>The link may be broken, or the page may have moved. Pick a section below or go back to the homepage.</p>
+      <a class="btn-black" href="/">Back to the portfolio</a>
+      <nav class="nf-links" aria-label="Portfolio sections">
+        <a class="tab" href="/#about">About</a>
+        <a class="tab" href="/#experience">Experience</a>
+        <a class="tab" href="/#lab">Lab</a>
+        <a class="tab" href="/#work">Work</a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>

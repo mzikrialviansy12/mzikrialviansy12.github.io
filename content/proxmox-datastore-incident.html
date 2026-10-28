@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study — Proxmox Datastore Failure | Muhamad Zikri Alviansyah</title>
+  <meta name="description" content="Case study: recovery from a Proxmox datastore failure affecting multiple virtual machines." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Muhamad Zikri Alviansyah" />
+  <meta property="og:title" content="Case Study — Proxmox Datastore Failure | Muhamad Zikri Alviansyah" />
+  <meta property="og:description" content="Case study: recovery from a Proxmox datastore failure affecting multiple virtual machines." />
+  <meta property="og:url" content="https://mzikrialviansy12.github.io/content/proxmox-datastore-incident.html" />
+  <meta property="og:image" content="https://mzikrialviansy12.github.io/assets/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Case Study — Proxmox Datastore Failure | Muhamad Zikri Alviansyah" />
+  <meta name="twitter:description" content="Case study: recovery from a Proxmox datastore failure affecting multiple virtual machines." />
+  <meta name="twitter:image" content="https://mzikrialviansy12.github.io/assets/og-cover.png" />
+  <link rel="canonical" href="https://mzikrialviansy12.github.io/content/proxmox-datastore-incident.html" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header-inner">
+      <a href="/" class="site-logo" aria-label="Back to portfolio">MZ</a>
+      <nav class="site-nav" id="siteNav" aria-label="Case study navigation">
+        <ul>
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/#work">Projects</a></li>
+        </ul>
+      </nav>
+      <a href="/#contact" class="btn btn-small header-cta">Contact me</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article class="container case-study">
+      <p class="eyebrow">Case Study</p>
+      <h1>Proxmox Datastore Failure &amp; Recovery</h1>
+      <p class="case-study-meta">Project: Virtualization Operations and Recovery · Role: Administrator · Scope: Multiple virtual machines</p>
+
+      <h2>Overview</h2>
+      <p>During routine operations, a Proxmox datastore failure was identified as affecting multiple virtual machines. The incident required rapid assessment, backup verification, and recovery to restore service.</p>
+
+      <h2>The Incident</h2>
+      <p>The failure manifested as the inability to operate virtual machines hosted on the affected datastore. Service availability for dependent workloads had to be evaluated before remediation.</p>
+
+      <h2>Response</h2>
+      <p>The affected virtual machines were taken offline in a controlled manner, and the recovery path was initiated through available backup and restore procedures.</p>
+
+      <h2>Resolution</h2>
+      <p>Service was restored through backup/restore operations within 30–60 minutes. A 500 GB virtual machine had previously been migrated via backup/restore in about 2 hours, demonstrating the effectiveness of the backup and recovery pipeline under large payloads.</p>
+
+      <h2>Timeline</h2>
+      <ul>
+        <li>Incident detected and scoped to the affected datastore.</li>
+        <li>Recovery actions executed via verified backup/restore procedures.</li>
+        <li>Service restored and workloads validated.</li>
+        <li>Post-incident review and hardening recommendations applied.</li>
+      </ul>
+
+      <h2>Lessons Learned</h2>
+      <p>The incident reinforced the importance of maintaining verified backups, documenting recovery procedures, and keeping virtualization storage operations rehearsed.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer-inner">
+      <a href="/">Back to portfolio</a>
+      <p>© <span id="year">2026</span> Muhamad Zikri Alviansyah</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
