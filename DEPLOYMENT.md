@@ -250,6 +250,6 @@ git status               # perubahan apa yang belum di-commit
 - [x] `.gitignore` melindungi file rahasia & draft
 - [x] `README.md` menjelaskan proyek (Inggris)
 - [x] `content.md` dikecualikan dari repo publik
-- [ ] Login GitHub (`gh auth login`) — menunggu kamu
-- [ ] Repo dibuat + push pertama
-- [ ] Situs live di `https://mzikrialviansy12.github.io/`
+- [x] Login GitHub (`gh auth login`)
+- [x] Repo dibuat + push pertama
+- [x] Situs live di `https://mzikrialviansy12.github.io/`
