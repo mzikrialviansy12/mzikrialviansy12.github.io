@@ -40,7 +40,12 @@ window.addEventListener("hashchange", onHashChange);
 window.addEventListener("load", () => activate(tabFromHash()));
 
 tabButtons.forEach((btn) => {
-  btn.addEventListener("click", () => activate(btn.dataset.tab));
+  btn.addEventListener("click", () => {
+    activate(btn.dataset.tab);
+    // Every tab opens from the top (instant, not smooth: panel content
+    // already swapped, animating the scroll would look glitchy)
+    window.scrollTo({ top: 0, behavior: "instant" });
+  });
 });
 
 const tablist = document.getElementById("portfolio-tabs");
@@ -58,6 +63,8 @@ if (tablist) {
     activate(nextTab);
     const nextBtn = document.getElementById(`tab-${nextTab}`);
     if (nextBtn) nextBtn.focus();
+    // Same as click: keyboard tab switch also starts from the top
+    window.scrollTo({ top: 0, behavior: "instant" });
   });
 }
 

@@ -95,7 +95,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ===== Tab panels ===== */
 .tab-panel { display: none; padding: 48px 0 110px; }
-.tab-panel.is-active { display: block; }
+.tab-panel.is-active {
+  display: block;
+  /* Soften the tab swap: content fades in with a small upward slide.
+     Auto-disabled by the prefers-reduced-motion block at the end of
+     this file (* { animation: none !important }). */
+  animation: panel-in 0.3s ease-out both;
+}
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 /* ===== About ===== */
 /* position + overflow guard: decor shapes are clipped here so they can never
