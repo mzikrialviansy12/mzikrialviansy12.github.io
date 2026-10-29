@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Study — Proxmox Datastore Failure | Muhamad Zikri Alviansyah</title>
   <meta name="description" content="Case study: recovery from a Proxmox datastore failure affecting multiple virtual machines." />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#faf9f6" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Muhamad Zikri Alviansyah" />
@@ -18,23 +18,20 @@
   <meta name="twitter:description" content="Case study: recovery from a Proxmox datastore failure affecting multiple virtual machines." />
   <meta name="twitter:image" content="https://mzikrialviansy12.github.io/assets/og-cover.png" />
   <link rel="canonical" href="https://mzikrialviansy12.github.io/content/proxmox-datastore-incident.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container site-header-inner">
-      <a href="/" class="site-logo" aria-label="Back to portfolio">MZ</a>
-      <nav class="site-nav" id="siteNav" aria-label="Case study navigation">
-        <ul>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/#work">Projects</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="tab-nav" aria-label="Case study navigation">
+        <a class="tab" href="/">Portfolio</a>
+        <a class="tab" href="/#work">Projects</a>
       </nav>
-      <a href="/#contact" class="btn btn-small header-cta">Contact me</a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="siteNav">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="btn-black cta-header-btn" href="mailto:m.zikrialviansy12@gmail.com?subject=Project%20inquiry">Email me</a>
     </div>
   </header>
 
@@ -70,12 +67,16 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer-inner">
-      <a href="/">Back to portfolio</a>
-      <p>© <span id="year">2026</span> Muhamad Zikri Alviansyah</p>
+    <div class="container footer-inner">
+      <a class="footer-back" href="/">Back to portfolio</a>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/muhamadzikrialviansyah/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/mzikrialviansy12" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-note">© <span id="year">2026</span> Muhamad Zikri Alviansyah</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -69,6 +69,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-size: 0.95rem;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
 .tab:hover { background: rgba(17, 17, 17, 0.06); }
 .tab[aria-selected="true"] { background: var(--ink); color: #ffffff; }
@@ -281,6 +282,32 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-inner { display: flex; flex-direction: column; gap: 14px; align-items: center; }
 .footer-contact { font-weight: 700; }
 .footer-links { display: flex; gap: 22px; }
+
+/* ===== Case study (content/ pages) ===== */
+.case-study { max-width: 760px; padding-top: 56px; padding-bottom: 40px; }
+.eyebrow {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin: 0 0 20px;
+}
+.case-study h1 { margin-bottom: 16px; }
+.case-study-meta {
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+.case-study h2 { margin: 44px 0 16px; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.case-study p { max-width: 68ch; }
+.case-study ul { display: grid; gap: 10px; padding-left: 22px; list-style: disc; }
+.case-study ul li { padding-left: 4px; }
+.footer-back { font-weight: 700; }
+.footer-note { margin: 0; color: var(--muted); font-size: 0.9rem; }
 
 /* ===== Motion ===== */
 @media (prefers-reduced-motion: reduce) {
