@@ -87,11 +87,12 @@ const labData = [
     label: "Network",
     items: [
       {
-        title: "Failover 2 ISP",
-        tools: ["Mikrotik", "VLAN"],
+        title: "Guest Network using Voucher Auth",
+        tools: ["Mikrotik", "Mikhmon", "VLAN", "TP-Link Omada"],
         summary:
-          "Created high availability (HA) using 2 Internet providers: if one link goes down, traffic switches to the other.",
-        outcome: "High Availability Internet",
+          "Built a guest Wi-Fi network with captive portal authentication using time-limited vouchers, isolated from the internal network.",
+        outcome:
+          "Controlled guest access with per-user time limits and no exposure to internal services. Deployed and running on my home network.",
         status: "done",
       },
     ],
