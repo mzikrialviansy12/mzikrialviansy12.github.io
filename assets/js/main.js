@@ -94,6 +94,9 @@ const labData = [
         outcome:
           "Controlled guest access with per-user time limits and no exposure to internal services. Deployed and running on my home network.",
         status: "done",
+        image: "/assets/guest-network-topology.svg",
+        imageAlt:
+          "Topology diagram: guest devices connect through a TP-Link Omada access point to a Mikrotik router, which checks vouchers with a Mikhmon captive portal before placing guests on isolated VLAN 10 with no access to the internal VLAN 1 network, then out to the internet.",
       },
     ],
   },
@@ -130,13 +133,17 @@ function renderLab(filterId) {
             item.tools.map((t) => '<li class="chip">' + t + "</li>").join("") +
             "</ul>"
           : "";
+      const imageHtml = item.image
+        ? '<img class="lab-card-diagram" src="' + item.image + '" alt="' + (item.imageAlt || item.title) + '" loading="lazy" />'
+        : "";
       card.innerHTML =
         '<span class="lab-status">' + item.status + "</span>" +
         '<p class="lab-card-kicker">' + f.label + "</p>" +
         '<h3 class="lab-card-title">' + item.title + "</h3>" +
         '<p class="lab-card-desc">' + item.summary + "</p>" +
         '<p class="lab-card-outcome"><strong>Result:</strong> ' + item.outcome + "</p>" +
-        toolsHtml;
+        toolsHtml +
+        imageHtml;
       labGrid.appendChild(card);
     });
   });

@@ -264,6 +264,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .lab-card-outcome strong { color: var(--ink); }
 .lab-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; }
 .lab-tools .chip { padding: 5px 14px; font-size: 0.8rem; }
+.lab-card-diagram { display: block; width: 100%; height: auto; margin-top: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); }
 .chip-row .chip { cursor: pointer; }
 .chip-active, .chip.chip-active { background: var(--ink); color: #ffffff; }
 
