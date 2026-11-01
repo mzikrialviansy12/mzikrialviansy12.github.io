@@ -10,10 +10,13 @@ Personal portfolio website for Muhamad Zikri Alviansyah, IT Infrastructure & Net
 ## Local development
 
 ```bash
-npx serve .
+python3 -m http.server 3000 --bind 0.0.0.0
 # or
 vercel dev
 ```
+
+Add `--bind 0.0.0.0` if you want to preview from another device on your LAN
+(default binds to `127.0.0.1` only).
 
 ## Deploy
 
