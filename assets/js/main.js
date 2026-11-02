@@ -101,7 +101,15 @@ const labData = [
     ],
   },
   { id: "virtualization", label: "Virtualization", items: [] },
-  { id: "server", label: "Server", items: [] },
+  { id: "server", label: "Server", items: [
+    {
+      title: "myPrivate Pocket NAS",
+      tools: ["FileBrowser", "Tailscale", "Termux"],
+      summary: "Creates a Google Drive-like web interface accessible from any browser on the same local network (LAN)",
+      outcome: "A self-hosted local file manager running on your Android phone via Termux, accessible through any browser on the same Wi-Fi network",
+      status: "done",
+    },
+  ] },
   { id: "ai", label: "AI Experiments", items: [
     {
       title: "Expenses AI / Personal Expense CLI",
