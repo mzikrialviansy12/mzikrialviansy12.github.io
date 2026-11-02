@@ -102,7 +102,15 @@ const labData = [
   },
   { id: "virtualization", label: "Virtualization", items: [] },
   { id: "server", label: "Server", items: [] },
-  { id: "ai", label: "AI Experiments", items: [] },
+  { id: "ai", label: "AI Experiments", items: [
+    {
+      title: "Expenses AI / Personal Expense CLI",
+      tools: ["JavaScript", "NodeJS"],
+      summary: "Calculate my expenses using CLI that runs by AI for token effectiveness.",
+      outcome: "CLI successfully calculates expenses with AI token efficiency.",
+      status: "done",
+    },
+  ] },
 ];
 
 const labGrid = document.querySelector(".lab-grid");
