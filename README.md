@@ -51,7 +51,8 @@ index.html                              # One-page portfolio (4 tabs: About, Exp
 assets/
   css/style.css                        # Site styles
   js/main.js                           # Tab routing, lab filters
-  favicon.svg                          # Favicon
+  favicon.ico                          # Favicon
+  header-logo.jpg                      # Header logo (monogram MZA)
   network-topology.svg                 # Project diagram asset
 content/
   proxmox-datastore-incident.html     # Project case study page

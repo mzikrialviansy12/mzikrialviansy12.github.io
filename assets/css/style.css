@@ -55,6 +55,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (min-width: 900px) {
   .header-inner { flex-direction: row; align-items: center; justify-content: space-between; gap: 24px; padding-top: 12px; padding-bottom: 12px; }
 }
+.header-logo { display: block; width: 40px; height: 40px; border-radius: 10px; flex: 0 0 auto; }
+@media (max-width: 899px) { .header-logo { width: 36px; height: 36px; } }
 .tab-nav { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .tab-nav::-webkit-scrollbar { display: none; }
 .tab {
