@@ -294,7 +294,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .site-footer { border-top: 1px solid var(--line); padding: 40px 0; }
 .footer-inner { display: flex; flex-direction: column; gap: 14px; align-items: center; }
 .footer-contact { font-weight: 700; }
-.footer-links { display: flex; gap: 22px; }
+.footer-brand { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); text-align: center; }
+.footer-tagline { margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); text-align: center; }
+.footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+.footer-links .chip { text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+.footer-links .chip:hover { background: var(--ink); color: #ffffff; transform: translateY(-2px); }
 
 /* ===== Case study (content/ pages) ===== */
 .case-study { max-width: 760px; padding-top: 56px; padding-bottom: 40px; }

@@ -63,4 +63,4 @@ content/
 - Content sourced from the author's CV; missing items are marked TODO on the page.
 - Tabs use hash routing: `#about`, `#experience`, `#lab`, `#work` (default `#about`).
 - Do not commit: `.env`, original CV PDF, personal phone number, or `drafts/` folder. (Public WhatsApp business number `https://wa.me/6281413361253` is intentionally published — it is exempt.)
-- Site language: English only. Contact form intentionally omitted; WhatsApp link only.
+- Site language: English only. Contact form intentionally omitted; primary contact is the WhatsApp button ("Contact me"), plus secondary footer links (GitHub, LinkedIn, Email).
